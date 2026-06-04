@@ -3,6 +3,8 @@
 > A production-style **Retrieval-Augmented Generation** service that answers questions grounded in your own documents — runs fully offline by default, plugs into an LLM when you add a key.
 
 <p align="left">
+  <img src="https://github.com/Harshalingawale/llm-rag-assistant/actions/workflows/ci.yml/badge.svg" alt="CI" />
+  <a href="https://github.com/Harshalingawale/llm-rag-assistant/pkgs/container/llm-rag-assistant"><img src="https://img.shields.io/badge/ghcr.io-image-2496ED?logo=docker&logoColor=white" alt="GHCR" /></a>
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white" />
   <img src="https://img.shields.io/badge/sentence--transformers-Embeddings-FFB000" />
