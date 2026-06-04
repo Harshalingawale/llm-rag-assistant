@@ -7,3 +7,4 @@ pydantic>=2.0
 # optional
 pypdf>=4.0        # PDF ingestion
 openai>=1.0       # generative answers (set OPENAI_API_KEY)
+gradio>=4.0

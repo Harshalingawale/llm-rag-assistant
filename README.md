@@ -15,6 +15,13 @@
 
 ---
 
+## Demo
+
+![RAG CLI demo](assets/demo.gif)
+
+*Ask a question; the retriever grounds the answer in your own documents.*
+
+
 ##  Why this exists
 
 LLMs hallucinate when asked about things outside their training data. **RAG** fixes this by retrieving the most relevant chunks from *your* knowledge base and forcing the model to answer from them. This repo implements the full loop — ingestion, chunking, embedding, vector search, and grounded generation — with clean, testable modules.
