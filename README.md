@@ -37,7 +37,7 @@ docs/ ──▶ chunking.py ──▶ embeddings (all-MiniLM-L6-v2) ──▶ FA
 | `api.py` | FastAPI service (`/ingest`, `/ask`, `/health`) |
 | `cli.py` | One-shot command-line Q&A |
 
-## ⚡ Quickstart
+##  Quickstart
 
 ```bash
 git clone https://github.com/harshalingawale/llm-rag-assistant.git
