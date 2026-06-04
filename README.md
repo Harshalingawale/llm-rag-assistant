@@ -1,4 +1,4 @@
-# 🤖 LLM RAG Assistant
+#  LLM RAG Assistant
 
 > A production-style **Retrieval-Augmented Generation** service that answers questions grounded in your own documents — runs fully offline by default, plugs into an LLM when you add a key.
 
@@ -13,13 +13,13 @@
 
 ---
 
-## 📌 Why this exists
+##  Why this exists
 
 LLMs hallucinate when asked about things outside their training data. **RAG** fixes this by retrieving the most relevant chunks from *your* knowledge base and forcing the model to answer from them. This repo implements the full loop — ingestion, chunking, embedding, vector search, and grounded generation — with clean, testable modules.
 
 A nice property: it works **without any API key** (returns an extractive answer from the top chunks), and upgrades to generative answers the moment you set `OPENAI_API_KEY`.
 
-## 🧱 How it works
+##  How it works
 
 ```
 docs/ ──▶ chunking.py ──▶ embeddings (all-MiniLM-L6-v2) ──▶ FAISS index
@@ -74,23 +74,23 @@ docker build -t rag-assistant .
 docker run -p 8000:8000 rag-assistant
 ```
 
-## 🧪 Tests
+##  Tests
 
 ```bash
 pytest -q
 ```
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 **Python · FastAPI · sentence-transformers · FAISS · Pydantic · Uvicorn · Docker** (OpenAI optional)
 
-## 📈 Roadmap
+##  Roadmap
 
 - [ ] Streaming responses + chat history
 - [ ] Re-ranking with a cross-encoder
 - [ ] Pluggable vector DBs (Qdrant, pgvector)
 - [ ] Evaluation harness (faithfulness / answer relevance)
 
-## 📝 License
+##  License
 
 MIT © [Harshal Ingawale](https://github.com/harshalingawale)
